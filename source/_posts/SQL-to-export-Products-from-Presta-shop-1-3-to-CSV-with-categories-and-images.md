@@ -7,7 +7,7 @@ tags:
 ---
 ![Presta Shop](/thumbnails/prestashop.jpg)
 
-A customer requested from me to update his Presta shop version. Since he had a old version, it was not possible. So I needed to install a new version and import everything from one to another. To do so, I did this SQL. It may be useful to you, feel free to use it:
+A customer requested from me to update his Presta shop version. Since he had an old version, it was not possible. So I needed to install a new version and import everything from one to another. To do so, I did this SQL. It may be useful to you, feel free to use it:
 
 ```SQL
 SELECT ps_product.id_product as id,
