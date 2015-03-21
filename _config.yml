@@ -4,8 +4,8 @@
 
 # Site
 title: Eric Maicon
-subtitle: 
-description:
+subtitle: A Full Stack developer who lives in Goiânia - Brazil and love challenge
+description: A Full Stack developer who lives in Goiânia - Brazil and love challenge
 author: Eric Maicon
 language: en
 timezone: 
@@ -69,3 +69,6 @@ theme: hueman
 deploy:
     type: git
     repository: git@github.com:ericmaicon/ericmaicon.github.io.git
+
+# Disqus
+disqus_shortname: ericmaicon
