@@ -54,7 +54,7 @@ If you want to work with Oracle + PHP, you need to install the instant client fo
 
 5. Download the sdk version:
 
-![Instant Client](/images/Installing-Nginx-and-PHP-from-source-5.png)
+![Instant Client](/images/Installing-Nginx-and-PHP-from-source-4.png)
 
 After that, you should upload these files to your server.
 
