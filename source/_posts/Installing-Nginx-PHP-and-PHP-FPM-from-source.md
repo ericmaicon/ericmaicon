@@ -9,15 +9,15 @@ tags:
 
 You may want to choose your exactly PHP configuration and extra components when you are creating a PHP server, right? To do so, the best approach is installing from the source.
 
-A good advice when you are installing from the source is: **install first all dependencies (MySQL, PostgreSQL, Oracle, mcrypt ...) and just after that, you should install the PHP. Why? Because some PHP components use some headers and files from these dependencies, it will avoid an error when the PHP starts to compile.
+A good advice when you are installing from the source is: **install first all dependencies** (MySQL, PostgreSQL, Oracle, mcrypt ...) and just after that, you should install the PHP. Why? Because some PHP components use some headers and files from these dependencies, it will avoid an error when the PHP starts to compile.
 
-I am using a Debian distribution. I tried to use few things from package managment. It may be easy for you to replace the following part to another distribution.
+I am using a Debian distribution. I tried to use few things from package management. It may be easy for you to replace the following part to another distribution.
 
 Let's start updating the aptitude and installing the basic requirements:
 
 ```sh
 aptitude update
-aptitude install build-essential libpq-dev libaio-dev libltdl-dev libltdl7
+aptitude install build-essential libaio-dev libltdl-dev libltdl7
 ```
 
 Now, the step 2 is start to install all dependencies.
@@ -35,12 +35,12 @@ cd freetds-0.91
 make && make install
 ```
 
-### Instantclient - Oracle
+### Instant Client - Oracle
 
 If you want to work with Oracle + PHP, you need to install the instant client for Oracle. There isn't a good way to download it by wget. To do so, you need to enter in the oracle site, accept the license, and download it.
 
 1. Open the [Oracle Download Page](http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html)
-2. Choose the right version of your instant client (It is very important to choose the same architecture of your OS, otherwise you will have error when the PHP starts to comunicate with it):
+2. Choose the right version of your instant client (It is very important to choose the same architecture of your OS, otherwise you will have error when the PHP starts to communicate with it):
 
 ![Instant Client](/images/Installing-Nginx-and-PHP-from-source.png)
 
@@ -70,11 +70,11 @@ export ORACLE_HOME=/usr/local/oracle-client-12-1
 export LD_LIBRARY_PATH=/usr/local/oracle-client-12-1
 ```
 
-At the script above, you need to take care with the name of these files. You may need to check the version that you downloaded and change the file name at the script. Your instant client is ready to work with PHP.
+At the script above, you need to take care with the name of these files. You may need to check the version that you download and change the file name at the script. Your instant client is ready to work with PHP.
 
 ### Ioncube
 
-(Ioncube)[http://www.ioncube.com/] is a software that encrypt/decrypt your code. It allows you to send a code to a customer without send the source.
+[Ioncube](http://www.ioncube.com) is a software that encrypt/decrypt your code. It allows you to send a code to a customer without send the source.
 
 Your server just need the loader to allow it decrypt those encrypted files:
 
@@ -211,6 +211,7 @@ If you did everything right until here, you may don't have any trouble. Some err
              --with-gd \
              --with-libdir=/lib/x86_64-linux-gnu \
              --with-mcrypt
+```
 
 **Important notes:**
 
@@ -326,7 +327,7 @@ After that, you just need some scripts to start/stop PHP-FPM and Nginx. You may 
 * [php-fpm](https://gist.github.com/ericmaicon/4c97bd9a23eac6b3d0fa)
 * [php-fpm.conf](https://gist.github.com/ericmaicon/0f44e3b2213522a90e40)
 
-Download nginx and php-fpm script and put inside of /etc/init.d. Download php-fpm.conf and put it inside of /usr/local/php/etc/
+Download nginx and php-fpm script and put inside of /etc/init.d directory. Download php-fpm.conf and put it inside of /usr/local/php/etc/ directory.
 
 ```sh
 chmod +x /etc/init.d/php-fpm
