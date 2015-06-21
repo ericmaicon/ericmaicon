@@ -116,18 +116,25 @@ make && make install
 
 ```sh
 cd /usr/src
-wget http://www.openssl.org/source/openssl-0.9.8k.tar.gz
-tar zxvf openssl-0.9.8k.tar.gz
-cd openssl-0.9.8k
-./config shared --prefix=/usr --openssldir=/usr/ssl no-asm
+wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
+tar zxvf openssl-1.0.1g.tar.gz
+cd openssl-1.0.1g
+./config --prefix=/usr/local/openssl --openssldir=/usr/local/openssl
 make && make install
+```
+
+If you want to check the installation, you can run the follow command:
+
+```sh
+/usr/local/openssl/bin/openssl version
+OpenSSL 1.0.1g 7 Apr 2014
 ```
 
 #### Free Type
 
 ```sh
 cd /usr/src
-wget http://download.savannah.gnu.org/releases/freetype/freetype-2.5.3.tar.gz
+wget http://download.videolan.org/contrib/freetype-2.5.3.tar.gz
 tar zxvf freetype-2.5.3.tar.gz
 cd freetype-2.5.3
 ./configure
@@ -149,7 +156,7 @@ make && make install
 
 ```sh
 cd /usr/src
-wget ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng16/libpng-1.6.16.tar.gz
+wget http://78.108.103.11/MIRROR/ftp/png/src/history/libpng16/libpng-1.6.16.tar.gz
 tar zxvf libpng-1.6.16.tar.gz
 cd libpng-1.6.16
 ./configure
@@ -171,7 +178,7 @@ make && make install
 
 ```sh
 cd /usr/src
-wget http://softlayer.dl.sourceforge.net/sourceforge/mcrypt/libmcrypt-2.5.8.tar.gz
+wget https://vps.googlecode.com/files/libmcrypt-2.5.8.tar.gz
 tar -zxvf libmcrypt-2.5.8.tar.gz
 cd libmcrypt-2.5.8
 ./configure --prefix=/usr/local  --disable-posix-threads --enable-dynamic-loading
@@ -263,6 +270,16 @@ error: Cannot find MySQL header files under /usr/include/mysql.
 ```
 
 You can fix this installing the mysql-dev package.
+
+**CentOS**:
+```sh
+yum install mysql-devel
+```
+
+**Debian**:
+```sh
+aptitude install libmysqld-dev
+```
 
 
 After that, if your configure command runned with success, you are able to run the make command:

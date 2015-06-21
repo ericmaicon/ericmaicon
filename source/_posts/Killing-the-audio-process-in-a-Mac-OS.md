@@ -5,7 +5,7 @@ categories:
 tags:
 - MacOS
 ---
-![MacOS](/thumbnails/apple.php)
+![MacOS](/thumbnails/apple.jpg)
 
 Did your audio leak and don't you know what to do in your MacOS? I had a problem where I was coding and suddenly the audio leaked and stopped. It happened several times a day, so the restart process would not be a good approach.
 
