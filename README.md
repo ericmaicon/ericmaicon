@@ -1,7 +1,7 @@
 ## "AOBAAA", I am [Eric Maicon](https://ericmaicon.com.br/)
 
  [![Instagram Badge](https://img.shields.io/badge/-@ericmaicon-F44747?style=flat-square&labelColor=F44747&logo=instagram&logoColor=white&link=https://instagram.com/ericmaicon)](https://instagram.com/ericmaicon) [![Linkedin Badge](https://img.shields.io/badge/-ericmaicon-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ericmaicon/)](https://www.linkedin.com/in/ericmaicon/)
-[![Gmail Badge](https://img.shields.io/badge/-ericmaicon@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ericmaicon@gmail.com)](mailto:ericmaicon@gmail.com)
+[![Email Badge](https://img.shields.io/badge/-eric@ericmaicon.com.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:eric@ericmaicon.com.br)](mailto:eric@ericmaicon.com.br)
 
 ### 🚀&nbsp; Techs I love
 
